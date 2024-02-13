@@ -33,3 +33,11 @@ const team = [
 
 ]
 
+for (let i = 0; i < team.length; i++) {
+    const oggettoAttuale = (team[i])
+
+    for (let key in oggettoAttuale) {
+        console.log(key + ": " + oggettoAttuale[key])
+    }
+}
+
