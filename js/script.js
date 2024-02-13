@@ -40,4 +40,3 @@ for (let i = 0; i < team.length; i++) {
         console.log(key + ": " + oggettoAttuale[key])
     }
 }
-
