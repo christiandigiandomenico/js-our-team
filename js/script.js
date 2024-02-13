@@ -52,8 +52,7 @@ for (let i = 0; i < team.length; i++) {
     const image = cardBody.querySelector('img');
     const title = cardBody.querySelector('.card-title');
 
-    cardHeader.textContent = member.nome;
+    cardHeader.innerHTML = member.nome;
     image.src = member.foto;
-    image.alt = member.nome;
-    title.textContent = member.ruolo;
+    title.innerHTML = member.ruolo;
 }
