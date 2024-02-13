@@ -40,3 +40,20 @@ for (let i = 0; i < team.length; i++) {
         console.log(key + ": " + oggettoAttuale[key])
     }
 }
+
+const teamList = document.querySelectorAll('.container .card');
+
+for (let i = 0; i < team.length; i++) {
+    const member = team[i];
+    const card = teamList[i];
+
+    const cardHeader = card.querySelector('.card-header');
+    const cardBody = card.querySelector('.card-body');
+    const image = cardBody.querySelector('img');
+    const title = cardBody.querySelector('.card-title');
+
+    cardHeader.textContent = member.nome;
+    image.src = member.foto;
+    image.alt = member.nome;
+    title.textContent = member.ruolo;
+}
